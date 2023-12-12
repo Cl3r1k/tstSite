@@ -24,7 +24,8 @@
   "related_applications": [
     {
       "platform": "play",
-      "id": "com.example.cool_app"
+      "id": "org.ncsasports.ncsacoach",
+      "url": "https://play.google.com/store/apps/details?id=org.ncsasports.ncsacoach&hl=en_US&gl=US"
     }
   ]
 }
