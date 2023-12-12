@@ -1,21 +1,14 @@
 {
-  "short_name": "Дело",
-  "name": "Дело",
-  "start_url": ".",
-  "display": "standalone",
+  "short_name": "Cool App",
+  "name": "Cool App - You're going to love it",
   "icons": [
     {
-      "src": "/static/assets/images/icons/icons-vector.svg",
-      "type": "image/svg+xml",
-      "sizes": "512x512"
-    },
-    {
-      "src": "/static/assets/images/icons/icon.png",
+      "src": "/android-chrome-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/static/assets/images/icons/icon.png",
+      "src": "/android-chrome-512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
@@ -24,7 +17,7 @@
   "related_applications": [
     {
       "platform": "play",
-      "id": "com.google.samples.apps.iosched"
+      "id": "com.example.cool_app"
     }
   ]
 }
