@@ -15,6 +15,16 @@
   <div>Added meta name="apple-itunes-app" + manifest</div>
   <div>Update manifest + add images</div>
   <button>Show alert</button>
+
+  <script>
+    // document.addEventListener('DOMContentLoaded', () => {
+    //   alert('DOMContentLoaded');
+    // });
+
+    window.addEventListener('beforeinstallprompt', (e) => {
+      alert('beforeinstallprompt');
+    });
+  </script>
 </body>
 
 </html>
