@@ -14,15 +14,42 @@
   <div>Test for native promo apps</div>
   <div>Added meta name="apple-itunes-app" + manifest</div>
   <div>Update manifest + add images</div>
-  <button>Show alert</button>
+  <button id="btnAlert">Show alert</button>
+  <button id="btnAdd">btnAdd action</button>
+  <div>Add beforeinstallprompt</div>
+  <div>Add buttons handlers</div>
 
   <script>
     // document.addEventListener('DOMContentLoaded', () => {
     //   alert('DOMContentLoaded');
     // });
 
+    let deferredPrompt;
+
+    btnAlert.addEventListener('click', (e) => {
+      alert('btnAlert clicked');
+    });
+
+    btnAdd.addEventListener('click', (e) => {
+      // Show the prompt
+      deferredPrompt.prompt();
+      // Wait for the user to respond to the prompt
+      deferredPrompt.userChoice
+        .then((choiceResult) => {
+          if (choiceResult.outcome === 'accepted') {
+            console.log('User accepted the A2HS prompt');
+          } else {
+            console.log('User dismissed the A2HS prompt');
+          }
+          deferredPrompt = null;
+        });
+    });
+
     window.addEventListener('beforeinstallprompt', (e) => {
       alert('beforeinstallprompt');
+
+      // Stash the event so it can be triggered later.
+      deferredPrompt = e;
     });
   </script>
 </body>
