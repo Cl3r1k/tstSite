@@ -1,0 +1,30 @@
+{
+  "short_name": "Дело",
+  "name": "Дело",
+  "start_url": ".",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/static/assets/images/icons/icons-vector.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512"
+    },
+    {
+      "src": "/static/assets/images/icons/icon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/static/assets/images/icons/icon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "prefer_related_applications": true,
+  "related_applications": [
+    {
+      "platform": "play",
+      "id": "com.google.samples.apps.iosched"
+    }
+  ]
+}
